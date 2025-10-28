@@ -397,7 +397,214 @@ a:hover {
 }
 
 /* ========================================
-   Vision Section
+   Vision Ecosystem Section
+======================================== */
+.vision-ecosystem {
+    background: var(--dark-bg);
+}
+
+.vision-comparison {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.vision-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+}
+
+.vision-icon {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.vision-column h3 {
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: 24px;
+}
+
+.vision-box {
+    background: var(--dark-surface-elevated);
+    border-radius: var(--border-radius);
+    padding: 32px;
+    margin-bottom: 24px;
+    border: 2px solid var(--border-subtle);
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Monolith styling */
+.vision-box.monolith {
+    border-color: rgba(239, 68, 68, 0.4);
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(185, 28, 28, 0.1) 100%);
+}
+
+.monolith-block {
+    background: rgba(239, 68, 68, 0.2);
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid rgba(239, 68, 68, 0.4);
+    width: 100%;
+}
+
+.monolith-block span {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ef4444;
+    margin-bottom: 12px;
+}
+
+.monolith-block p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* Ecosystem styling */
+.vision-box.ecosystem {
+    border-color: rgba(34, 197, 94, 0.4);
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(21, 128, 61, 0.1) 100%);
+}
+
+.ecosystem-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.ecosystem-item {
+    background: var(--primary-blue);
+    color: var(--text-primary);
+    padding: 16px 8px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: var(--transition);
+    border: 1px solid var(--primary-blue-bright);
+}
+
+.ecosystem-item:hover {
+    transform: scale(1.05);
+    box-shadow: var(--glow-blue);
+}
+
+.ecosystem-label {
+    text-align: center;
+    color: #22c55e;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* Vision lists */
+.vision-list {
+    list-style: none;
+    padding: 0;
+}
+
+.vision-list li {
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background: var(--dark-surface-elevated);
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.vision-list.negative li {
+    border-left: 3px solid #ef4444;
+    color: var(--text-secondary);
+}
+
+.vision-list.positive li {
+    border-left: 3px solid #22c55e;
+    color: var(--text-secondary);
+}
+
+.vision-list li:hover {
+    transform: translateX(8px);
+    background: var(--dark-surface);
+}
+
+/* Vision arrow */
+.vision-arrow {
+    text-align: center;
+    min-width: 100px;
+}
+
+.vision-arrow span {
+    font-size: 4rem;
+    color: var(--primary-blue-bright);
+    display: block;
+    margin-bottom: 16px;
+}
+
+.vision-arrow p {
+    color: var(--accent-yellow-bright);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Vision benefits grid */
+.vision-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+    margin-top: 60px;
+}
+
+.vision-benefit-card {
+    background: var(--dark-surface-elevated);
+    padding: 32px 24px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-subtle);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.vision-benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--glow-blue);
+    border-color: var(--primary-blue);
+}
+
+.benefit-icon-large {
+    font-size: 3.5rem;
+    margin-bottom: 16px;
+}
+
+.vision-benefit-card h4 {
+    color: var(--primary-blue-bright);
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.vision-benefit-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* ========================================
+   Vision Section (Manifesto)
 ======================================== */
 .vision {
     background: var(--dark-bg);
@@ -896,6 +1103,22 @@ a:hover {
 
     .arrow {
         transform: rotate(90deg);
+    }
+
+    .vision-comparison {
+        flex-direction: column;
+    }
+
+    .vision-arrow {
+        margin: 20px 0;
+    }
+
+    .vision-arrow span {
+        transform: rotate(90deg);
+    }
+
+    .ecosystem-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .timeline::before {
