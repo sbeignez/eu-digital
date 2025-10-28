@@ -588,6 +588,121 @@ a:hover {
 }
 
 /* ========================================
+   Team Section
+======================================== */
+.team {
+    background: var(--dark-surface);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.team-member {
+    background: var(--dark-surface-elevated);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--glow-blue);
+    border-color: var(--primary-blue);
+}
+
+.member-photo {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background: var(--dark-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.team-member:hover .member-photo img {
+    transform: scale(1.05);
+}
+
+.member-info {
+    padding: 32px 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.member-info h3 {
+    color: var(--primary-blue-bright);
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+}
+
+.member-role {
+    color: var(--accent-yellow-bright);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.member-bio {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.member-social {
+    display: flex;
+    gap: 16px;
+}
+
+.member-social a {
+    font-size: 1.5rem;
+    transition: var(--transition);
+    opacity: 0.8;
+}
+
+.member-social a:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.team-note {
+    background: var(--dark-surface-elevated);
+    border-left: 4px solid var(--accent-yellow);
+    padding: 24px;
+    border-radius: var(--border-radius);
+    margin-top: 40px;
+}
+
+.team-note p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+.team-note strong {
+    color: var(--accent-yellow-bright);
+}
+
+/* ========================================
    Join Section
 ======================================== */
 .join {
@@ -764,7 +879,8 @@ a:hover {
 
     .stats-grid,
     .manifesto-grid,
-    .benefits-grid {
+    .benefits-grid,
+    .team-grid {
         grid-template-columns: 1fr;
     }
 
