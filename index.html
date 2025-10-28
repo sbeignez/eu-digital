@@ -3,9 +3,309 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EU Digital</title>
+    <meta name="description" content="Initiative pour l'Interopérabilité Numérique Européenne - Permettre à l'Europe de retrouver le contrôle de son numérique">
+    <meta name="keywords" content="numérique européen, interopérabilité, souveraineté numérique, solutions européennes">
+    <title>IINE - Initiative pour l'Interopérabilité Numérique Européenne</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-brand">IINE</div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#problem">Contexte</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#benefits">Bénéfices</a></li>
+                <li><a href="#approach">Approche</a></li>
+                <li><a href="#join" class="nav-cta">Rejoindre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Initiative pour l'Interopérabilité Numérique Européenne</h1>
+                <p class="hero-tagline">L'Europe numérique, libre et intégrée</p>
+                <p class="hero-mission">Permettre à l'Europe de retrouver le contrôle de son numérique en rendant les solutions européennes simples à combiner, à intégrer et à adopter.</p>
+                <a href="#join" class="btn btn-primary btn-large">Rejoindre l'initiative</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="section problem">
+        <div class="container">
+            <h2 class="section-title">Le Contexte</h2>
+            <p class="section-intro">Aujourd'hui, les acteurs publics et privés dépendent fortement de suites numériques fermées, principalement non européennes. Cette dépendance limite la capacité de choisir et nuit à la souveraineté technologique de l'Europe.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🔒</div>
+                    <div class="stat-number" data-target="85">0</div>
+                    <div class="stat-unit">%</div>
+                    <div class="stat-label">Dépendance aux suites fermées</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🇪🇺</div>
+                    <div class="stat-number" data-target="30">0</div>
+                    <div class="stat-unit">+</div>
+                    <div class="stat-label">Solutions européennes isolées</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💡</div>
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-unit">%</div>
+                    <div class="stat-label">Potentiel inexploité</div>
+                </div>
+            </div>
+
+            <div class="problem-visual">
+                <div class="problem-box locked">
+                    <h3>Suites fermées</h3>
+                    <p>Intégration forte = Dépendance forte</p>
+                </div>
+                <div class="arrow">→</div>
+                <div class="problem-box open">
+                    <h3>Solutions européennes</h3>
+                    <p>Performantes mais isolées</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="section vision">
+        <div class="container">
+            <h2 class="section-title">Notre Manifeste</h2>
+            <p class="section-intro">Nous affirmons que la souveraineté numérique européenne passe par :</p>
+
+            <div class="manifesto-grid">
+                <div class="manifesto-card">
+                    <div class="manifesto-icon">🎯</div>
+                    <h3>Droit de choisir</h3>
+                    <p>Le droit de choisir ses outils librement</p>
+                </div>
+                <div class="manifesto-card">
+                    <div class="manifesto-icon">🔄</div>
+                    <h3>Droit de migrer</h3>
+                    <p>Le droit de migrer sans contrainte</p>
+                </div>
+                <div class="manifesto-card">
+                    <div class="manifesto-icon">🛡️</div>
+                    <h3>Contrôle des données</h3>
+                    <p>Le droit de contrôler ses données</p>
+                </div>
+                <div class="manifesto-card">
+                    <div class="manifesto-icon">🇪🇺</div>
+                    <h3>Soutien européen</h3>
+                    <p>Le soutien aux solutions européennes</p>
+                </div>
+                <div class="manifesto-card">
+                    <div class="manifesto-icon">🔗</div>
+                    <h3>Standards ouverts</h3>
+                    <p>La priorité aux standards ouverts et à l'interopérabilité</p>
+                </div>
+            </div>
+
+            <blockquote class="vision-quote">
+                "Nous ne sommes pas contre les technologies étrangères. Nous sommes pour un marché réellement libre et équilibré."
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="section benefits">
+        <div class="container">
+            <h2 class="section-title">Pour Qui ?</h2>
+            <p class="section-intro">Des bénéfices concrets pour tous les acteurs</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏢</div>
+                    <h3>Organisations</h3>
+                    <p>Remplacer progressivement les briques d'une suite étrangère sans tout changer d'un coup</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💼</div>
+                    <h3>Éditeurs européens</h3>
+                    <p>Accès à un réseau, à de la visibilité et à des standards communs</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">👥</div>
+                    <h3>Citoyens</h3>
+                    <p>Maîtrise accrue sur leurs données et leurs usages numériques</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏛️</div>
+                    <h3>Pouvoirs publics</h3>
+                    <p>Un levier stratégique pour réduire la dépendance aux écosystèmes fermés</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="approach" class="section approach">
+        <div class="container">
+            <h2 class="section-title">Notre Approche</h2>
+            <p class="section-intro">Un plan d'actions progressif et concret</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Phase 1 : 12 premiers mois</h3>
+                        <div class="timeline-details">
+                            <div class="timeline-action">
+                                <h4>📋 Annuaire des solutions</h4>
+                                <p>Cartographier les solutions européennes par usage : email, drive, visio, collaboration, maps, cloud, IA</p>
+                            </div>
+                            <div class="timeline-action">
+                                <h4>🔧 Comité Technique</h4>
+                                <p>Définir des standards d'interopérabilité : authentification, partage de documents, agendas</p>
+                            </div>
+                            <div class="timeline-action">
+                                <h4>🚀 Pilotes concrets</h4>
+                                <p>Déploiement dans des collectivités et PME pour démontrer la faisabilité</p>
+                            </div>
+                            <div class="timeline-action">
+                                <h4>📖 Guide de migration</h4>
+                                <p>Parcours simples pour remplacer Google Workspace ou Microsoft 365</p>
+                            </div>
+                            <div class="timeline-action">
+                                <h4>📢 Communication</h4>
+                                <p>Site de référence, label, évènements, témoignages</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Phase 2 : 24 à 36 mois</h3>
+                        <div class="timeline-details">
+                            <div class="timeline-action">
+                                <h4>✅ Tests de compatibilité</h4>
+                                <p>Outils automatisés pour vérifier l'interopérabilité</p>
+                            </div>
+                            <div class="timeline-action">
+                                <h4>🌐 Plateforme d'interconnexion</h4>
+                                <p>Hub entre éditeurs volontaires pour faciliter l'intégration</p>
+                            </div>
+                            <div class="timeline-action">
+                                <h4>📱 Extension mobile & cloud</h4>
+                                <p>Applications mobiles et services cloud avancés</p>
+                            </div>
+                            <div class="timeline-action">
+                                <h4>🤝 Collaboration institutionnelle</h4>
+                                <p>Partenariats avec les institutions européennes et les États membres</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="section join">
+        <div class="container">
+            <h2 class="section-title">Rejoignez le Mouvement</h2>
+            <p class="section-intro">Ensemble, construisons l'Europe numérique de demain</p>
+
+            <div class="join-content">
+                <div class="join-text">
+                    <h3>Pourquoi nous rejoindre ?</h3>
+                    <ul class="join-list">
+                        <li>✓ Participer à une initiative à fort impact</li>
+                        <li>✓ Accéder à un réseau d'experts et d'acteurs engagés</li>
+                        <li>✓ Contribuer aux standards et aux bonnes pratiques</li>
+                        <li>✓ Bénéficier d'une visibilité et de ressources partagées</li>
+                    </ul>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom / Organisation *</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom ou organisation">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Type d'organisation</label>
+                        <select id="type" name="type">
+                            <option value="">Sélectionnez...</option>
+                            <option value="collectivite">Collectivité publique</option>
+                            <option value="entreprise">Entreprise / PME</option>
+                            <option value="editeur">Éditeur de solutions</option>
+                            <option value="association">Association</option>
+                            <option value="citoyen">Citoyen</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Parlez-nous de votre intérêt pour l'initiative..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Envoyer ma demande</button>
+
+                    <div id="form-message" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>IINE</h4>
+                    <p>Initiative pour l'Interopérabilité Numérique Européenne</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Principes</h4>
+                    <ul>
+                        <li>Neutralité vis-à-vis des éditeurs</li>
+                        <li>Indépendance politique et économique</li>
+                        <li>Gouvernance ouverte et transparente</li>
+                        <li>Respect strict du RGPD</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>contact@iine.eu (provisoire)</p>
+                    <p>GitHub: <a href="https://github.com/sbeignez/eu-digital" target="_blank">sbeignez/eu-digital</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 IINE - Initiative pour l'Interopérabilité Numérique Européenne. Nom provisoire.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
