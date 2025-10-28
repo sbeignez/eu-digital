@@ -916,6 +916,97 @@ a:hover {
 }
 
 /* ========================================
+   Ambassadors Section
+======================================== */
+.ambassadors {
+    background: var(--dark-bg);
+}
+
+.ambassadors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.ambassador-card {
+    background: var(--dark-surface-elevated);
+    border-radius: var(--border-radius);
+    padding: 24px 20px;
+    border: 1px solid var(--border-subtle);
+    text-align: center;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ambassador-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--glow-blue);
+    border-color: var(--primary-blue);
+}
+
+.ambassador-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 16px;
+    border: 3px solid var(--primary-blue);
+    transition: var(--transition);
+}
+
+.ambassador-card:hover .ambassador-photo {
+    border-color: var(--accent-yellow);
+    box-shadow: var(--glow-yellow);
+}
+
+.ambassador-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ambassador-card h4 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.ambassador-role {
+    font-size: 0.85rem;
+    color: var(--accent-yellow);
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ambassador-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.ambassador-note {
+    background: var(--dark-surface-elevated);
+    border-left: 4px solid var(--primary-blue);
+    padding: 16px 20px;
+    border-radius: var(--border-radius);
+    margin-top: 24px;
+}
+
+.ambassador-note p {
+    color: var(--text-tertiary);
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+/* ========================================
    Join Section
 ======================================== */
 .join {
@@ -1093,7 +1184,8 @@ a:hover {
     .stats-grid,
     .manifesto-grid,
     .benefits-grid,
-    .team-grid {
+    .team-grid,
+    .ambassadors-grid {
         grid-template-columns: 1fr;
     }
 
